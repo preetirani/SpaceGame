@@ -22,7 +22,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var score: Int = 0 {
         didSet {
             scoreLabel.text = "Score: \(score)"
-            if score > 100 {
+            if score > totalLifes {
                 alienAnimationDuration = animationDurationIncreaseFactor <= 0 ? 1 : animationDurationIncreaseFactor
             } else if alienAnimationDuration <= 0 {
                 alienAnimationDuration = 1
@@ -30,7 +30,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    var totalLifes = 100
+    var totalLifes = 4
     var lifes: Int = 10 {
         didSet {
             lifesLabel.text = "Lifes: \(lifes > 0 ? lifes : 0)"
@@ -55,7 +55,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addPlayer()
         addScoreLabel()
         addLifeLabel()
-        gameTimer = Timer.scheduledTimer(timeInterval: 0.75, target: self, selector: #selector(addAlien), userInfo: nil, repeats: true)
+        
+        var timeInterval = 0.75
+        if UserDefaults.standard.bool(forKey: String.HardKey) {
+            timeInterval = 0.3
+        }
+        
+        gameTimer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(addAlien), userInfo: nil, repeats: true)
         
         motionManager.accelerometerUpdateInterval = 0.2
         motionManager.startAccelerometerUpdates(to: OperationQueue.current!) { (data:CMAccelerometerData?, error:Error?) in
