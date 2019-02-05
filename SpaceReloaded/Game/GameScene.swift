@@ -34,6 +34,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var lifes: Int = 10 {
         didSet {
             lifesLabel.text = "Lifes: \(lifes > 0 ? lifes : 0)"
+            
             if lifes <= 0 {
                 endGame()
             }

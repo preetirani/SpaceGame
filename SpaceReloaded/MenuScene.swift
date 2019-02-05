@@ -72,6 +72,8 @@ extension String {
     static let StarFieldName        : String = "starfield"
     static let DifficultyLevelImageName      = "DifficultyLevelButton"
     static let HardKey      = "hard"
+    static let HighestScoreKey = "highestScoreKey"
     static let HardText     = "Hard"
     static let EasyText     = "Easy"
+    
 }

@@ -20,6 +20,8 @@
 		216026992203051B009B99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 216026972203051B009B99F2 /* LaunchScreen.storyboard */; };
 		216026A922030ABA009B99F2 /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 216026A722030AB9009B99F2 /* torpedo.mp3 */; };
 		216026AD22031DFD009B99F2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 216026AC22031DFD009B99F2 /* GameScene.sks */; };
+		2197F23922099F9200FADE47 /* GameOver.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2197F23822099F9200FADE47 /* GameOver.sks */; };
+		2197F23B2209B44300FADE47 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2197F23A2209B44300FADE47 /* GameOverScene.swift */; };
 		21BABA132203FBCF00500170 /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 21BABA122203FBCF00500170 /* Starfield.sks */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		2160269A2203051B009B99F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		216026A722030AB9009B99F2 /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
 		216026AC22031DFD009B99F2 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		2197F23822099F9200FADE47 /* GameOver.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOver.sks; sourceTree = "<group>"; };
+		2197F23A2209B44300FADE47 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		21BABA122203FBCF00500170 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +71,8 @@
 			children = (
 				216026AC22031DFD009B99F2 /* GameScene.sks */,
 				2160268E22030519009B99F2 /* GameScene.swift */,
+				2197F23822099F9200FADE47 /* GameOver.sks */,
+				2197F23A2209B44300FADE47 /* GameOverScene.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -182,6 +188,7 @@
 				216026992203051B009B99F2 /* LaunchScreen.storyboard in Resources */,
 				21BABA132203FBCF00500170 /* Starfield.sks in Resources */,
 				216026AD22031DFD009B99F2 /* GameScene.sks in Resources */,
+				2197F23922099F9200FADE47 /* GameOver.sks in Resources */,
 				2160268D22030519009B99F2 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2197F23B2209B44300FADE47 /* GameOverScene.swift in Sources */,
 				2160268F22030519009B99F2 /* GameScene.swift in Sources */,
 				2145836A2208487E007F59D5 /* MenuScene.swift in Sources */,
 				2160269122030519009B99F2 /* GameViewController.swift in Sources */,
